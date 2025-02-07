@@ -6,12 +6,25 @@ body{
     font-family: "Noto Sans", sans-serif;
 }
 
+@font-face { 
+    font-family: "BebasBook";
+    src: url("../fonts/BebasBook.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.container{
+    max-width: 1440px;
+    margin: auto;
+}
+
 .navbar{
-    background-color: rgb(45, 45, 45);
+    border-bottom: 1px solid rgba(235, 235, 240, 0.2);
     display: flex;
     align-items: center;
     color: #fff;
     height: 94px;
+    position: relative;
 }
 
 .header-nav{
@@ -43,26 +56,122 @@ body{
     color: inherit;
 }
 
+.header-button{
+    flex-shrink: 0;
+
+}
+
 .button{
     font-size: 16px;
     color: #fff;
     line-height: 160%;
     font-weight: 600;
     background-color: #5C8EE5;
-    align-items: center;
-    justify-content: center;
     padding: 25px 60px;
-    gap: 10px;
     border: none;
-    flex-shrink: 0;
-
+    display: inline-block;
+    cursor: pointer;
 }
 
 .header-button{
     height: 100%;
 }
 
+.header-logo{
+    height: 100%;
+    border-right: 1px solid rgba(235, 235, 240, 0.2);
+}
+
+.logo-light{
+    margin-top: 25px;
+}
 .logo-link{
     margin-left: 50px;
-    margin-right: 101px;
+    margin-right: 50px;
+}
+
+.header{
+    min-height: 100vh;
+}
+
+.header-image{
+    background-image:  url('../img/header-jpg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.header-image::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(41, 45, 51, 0.6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.ceporator{
+    background-color: #5C8EE5;
+    width: 150px;
+    height: 2px;
+}
+
+.header-content{
+    position: relative;
+    z-index: 1;
+    padding-top: 150px;
+    color: #fff;
+}
+
+.header-title{
+    font-family: "BebasBook";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 120%;
+    max-width: 1080px;
+}
+
+.header-text{
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    max-width: 720px;
+}
+
+.h-butt{
+    margin-top: 50px;
+}
+
+.Uli{
+    list-style: none;
+    display: flex;
+    min-width: 168px;
+    padding: 0;
+    margin-top: 100px;
+    position: relative;
+    color: #fff;
+}
+
+.text-li{
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.header-li{
+    padding: 30px 50px;
+    border: 1px solid rgba(235, 235, 240, 0.2);
+}
+
+.header-li:not(:last-child){
+    border-right: none;
+
 }
