@@ -27,6 +27,7 @@ body{
     width: 100%;
     z-index: 2;
     position: fixed;
+    transition: background-color 0.2s;
 }
 
 .header-nav{
@@ -80,11 +81,13 @@ body{
 }
 
 .header-logo{
+    a
     height: 100%;
     border-right: 1px solid rgba(235, 235, 240, 0.2);
 }
 
 .logo-light{
+    align-items: center;
     margin-top: 25px;
 }
 .logo-link{
@@ -261,4 +264,37 @@ body{
     display: inline-block;
     background: #5C8EE5;
     margin-right: 12px;
+}
+
+.navbar-light{
+    background-color: #fff;
+    color: #292d33;
+}
+
+.navbar-light .header-logo-path{
+    fill: #292D33;
+}
+
+.navbar-light .header-logo-patth{
+    fill: #292D33;
+}
+
+.contract-zagalovok{
+    font-family: "BebasBook";
+    font-size: 60px;
+    height: 72px;
+    color: #292D33;    
+}
+
+.contract{
+    list-style: none;
+}
+
+.contract-h3{
+    
+    font-family: "Noto Sans";
+    font-size: 28px;
+    height: 44.8px;
+    color: #292D33;
+    margin-bottom: 10px;
 }
