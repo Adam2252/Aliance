@@ -6,6 +6,9 @@ body{
     font-family: "Noto Sans", sans-serif;
 }
 
+html{
+    font-size: 16px;
+}
 @font-face { 
     font-family: "BebasBook";
     src: url("../fonts/BebasBook.woff") format("woff");
@@ -14,20 +17,21 @@ body{
 }
 
 .container{
-    max-width: 1440px;
+    max-width: 90rem;
     margin: auto;
 }
 
 .navbar{
+    margin-bottom: 0;
     border-bottom: 1px solid rgba(235, 235, 240, 0.2);
     display: flex;
     align-items: center;
     color: #fff;
-    height: 94px;
+    height: 5.875rem;
     width: 100%;
     z-index: 2;
     position: fixed;
-    transition: background-color 0.2s;
+    transition: background-color 0.5s;
 }
 
 .header-nav{
@@ -40,8 +44,8 @@ body{
 
 .header-nav-link{
     text-decoration: none;
-    font-size: 16px;
-    margin-right: 50px;
+    font-size: 1rem;
+    margin-right: 3.125rem;
     color: inherit;
 }
 
@@ -49,13 +53,13 @@ body{
     flex-shrink: 0;
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-right: 50px;  
+    gap: .625rem;
+    margin-right: 3.125rem;  
 }
 
 .header-phone-link{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
     color: inherit;
 }
 
@@ -65,12 +69,12 @@ body{
 }
 
 .button{
-    font-size: 16px;
+    font-size: 1rem;
     color: #fff;
     line-height: 160%;
     font-weight: 600;
     background-color: #5C8EE5;
-    padding: 25px 60px;
+    padding: 1.5625rem 3.75rem;
     border: none;
     display: inline-block;
     cursor: pointer;
@@ -80,26 +84,28 @@ body{
     height: 100%;
 }
 
-.header-logo{
-    a
+.header-logo{   
+    display: flex;
+    align-items: center;
     height: 100%;
     border-right: 1px solid rgba(235, 235, 240, 0.2);
 }
 
 .logo-light{
-    align-items: center;
-    margin-top: 25px;
+    margin-top: 1.5625rem;
 }
 .logo-link{
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 3.125rem;
+    margin-right: 3.125rem;
 }
 
 .header{
+    margin-bottom: 0;   
     min-height: 100vh;
 }
 
 .header-image{
+    background-position: center bottom -2.5rem;
     background-image:  url('../img/header-jpg.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -119,51 +125,56 @@ body{
 }
 
 .ceporator{
+    margin-top: 6.25rem;
     background-color: #5C8EE5;
-    width: 150px;
-    height: 2px;
+    width: 9.375rem;
+    height: .125rem;
 }
 
 .header-content{
     position: relative;
     z-index: 1;
-    padding-top: 150px;
+    padding-top: 9.375rem;
     color: #fff;
 }
 
 .header-title{
+    letter-spacing: .8px;
+    word-spacing: -1.6px;
     font-family: "BebasBook";
     font-style: normal;
     font-weight: 400;
-    font-size: 80px;
+    font-size: 5rem;
     line-height: 120%;
-    max-width: 1080px;
+    max-width: 67.5rem;
 }
 
 .header-text{
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 160%;
-    max-width: 720px;
+    max-width: 45rem;
 }
 
 .h-butt{
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 
 .Uli{
+    margin-bottom: 0;
     list-style: none;
     display: flex;
-    min-width: 168px;
+    min-width: 10.5rem;
     padding: 0;
-    margin-top: 100px;
+    margin-top: 6.25rem;
     position: relative;
     color: #fff;
 }
 
 .text-li{
+    margin-top: 1.875rem;
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
@@ -172,7 +183,7 @@ body{
 }
 
 .header-li{
-    padding: 30px 50px;
+    padding: 1.875rem 3.125rem;
     border: 1px solid rgba(235, 235, 240, 0.2);
 }
 
@@ -182,19 +193,19 @@ body{
 }
 
 .section{
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 9.375rem;
+    margin-bottom: 9.375rem;
 }
 .section-title{
     font-family: "BebasBook";
-    font-size: 60px;
+    font-size: 3.75rem;
     line-height: 120%;
     color: #292D33;
 }
 
 .steps{
     display: flex;
-    gap: 30px;
+    gap: 1.875rem;
     list-style: none;
     padding: 0;
 }
@@ -209,24 +220,24 @@ body{
     font-family: 'BebasBook';
     font-style: normal;
     font-weight: 400;
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 120%; 
     color: #5C8EE6; 
 }
 
 .steps-title{
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 1.875rem;
+    margin-bottom: .625rem;
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 1.75rem;
     line-height: 160%;
     color: #292D33;
 }
 
 .steps-text{
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
@@ -241,7 +252,7 @@ body{
     width: 100%;
     display: inline-block;
     background: #EBEBF0;
-    margin-left: 30px;
+    margin-left: 1.875rem;
 }
 
 .steps-btn{
@@ -250,20 +261,20 @@ body{
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
     align-items: center;
     line-height: 160%;
     color: #5C8EE5;
 }
 
 .steps-btn::before{
-    max-width: 40px;
+    max-width: 2.5rem;
     content: "";
     height: 1px;
     width: 100%;
     display: inline-block;
     background: #5C8EE5;
-    margin-right: 12px;
+    margin-right: .75rem;
 }
 
 .navbar-light{
@@ -281,8 +292,8 @@ body{
 
 .contract-zagalovok{
     font-family: "BebasBook";
-    font-size: 60px;
-    height: 72px;
+    font-size: 3.75rem;
+    height: 4.5rem;
     color: #292D33;    
 }
 
@@ -293,8 +304,63 @@ body{
 .contract-h3{
     
     font-family: "Noto Sans";
-    font-size: 28px;
+    font-size: 1.75rem;
     height: 44.8px;
     color: #292D33;
-    margin-bottom: 10px;
+    margin-bottom: .625rem;
+}
+
+@media (max-width:1700px){
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:1460px){
+    html {
+        font-size: 13px;
+    }   
+    .header-logo{
+        padding: 2rem;
+    }
+    .logo-svg{
+        max-width: 8rem;
+    }
+    .header-nav{
+        padding-left: 2rem;
+    }
+    .header-nav-item:not(:last-child){
+        margin-right: 1rem;
+    }
+    .header-phone{
+        margin-right: 2rem;
+    }
+
+}
+
+@media (max-width:1200px){
+    .container{
+        min-width: 70rem;
+    }
+    .header-phone{
+        display: none;
+    }
+    .navbar{
+        height: 5rem;
+    }
+    .header-button{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+}
+
+@media (max-width:992px){
+    .container{
+        min-width: 60rem;
+    }
+    html {
+        font-size: 12px;
+    }
+
 }
