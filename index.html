@@ -14,8 +14,40 @@
     <title>Aliance</title>
 </head>
 <body>
+    <div class="mobile-menu">
+        <ul class="mobile-menu-nav">
+            <li class="mobile-menu-nav-item">
+                <a href="#" class="mobile-menu-link">О компании</a>
+            </li>
+            <li class="mobile-menu-nav-item">
+                <a href="#" class="mobile-menu-link">Контрактное производство</a>
+                <ul class="mobile-submenu">
+                    <li class="mobile-submenu-item"><a href="#">Автомобильная химия</a></li>
+                    <li class="mobile-submenu-item"><a href="#">Бытовая химия</a></li>
+                    <li class="mobile-submenu-item"><a href="#">Дезинфицирующая химия</a></li>
+                    <li class="mobile-submenu-item"><a href="#">Пищевые аэрозоли</a></li>
+                    <li class="mobile-submenu-item"><a href="#">Косметическая продукция</a></li>
+                    <li class="mobile-submenu-item"><a href="#">Краски аэрозольные</a></li>
+                </ul>
+            </li>
+            <li class="mobile-menu-item">
+                <a href="#" class="mobile-menu-link">Собственные торговые марки</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a href="#" class="mobile-menu-link">Новости</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a href="#" class="mobile-menu-link">Контакты</a>
+            </li>
+        </ul>
+    </div>
     <header class="header header-image">
         <nav class="navbar navbar-light">
+            <a href="#" class="mobile-menu-toggle">
+                <div class="mobile-menu-line"></div>
+                <div class="mobile-menu-line"></div>
+                <div class="mobile-menu-line"></div>
+            </a>
             <div class="header-logo">
                 <a href="./" class="logo-link">
                     <svg class="logo-svg" width="140" height="44">
@@ -41,50 +73,61 @@
                 </li>
             </ul>
             <div class="header-phone">
-                <svg class="logo-svg" width="24" height="24">
+                <svg class="phone-icon" width="24" height="24">
                     <use href="img/icons.svg#phone"></use>
                 </svg>
                 <a href="tel:+74996861014" class="header-phone-link">+7 (499) 686-10-14</a>
     
             </div>
-            <button class="header-button button"><span class="button-text">Получить консультацию</span></button>
+            
+            <button class="header-button button">
+                <svg class="button-icon" width="24" height="24">
+                    <use href="img/icons.svg#phone"></use>
+                </svg>
+                <span class="button-text">Получить консультацию</span>
+        </button>
         </nav>
         <div class="container">
             <div class="header-content">
-                <div class="ceporator">
+                <div class="header-header">
+                    <div class="ceporator">
                     
+                    </div>
+                    <!-- /.ceporator -->
+                    <h1 class="header-title">Комплексное обеспечение товарами и расходными материалами бизнеса</h1>
+                    <p class="header-text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от анализа существующих паттернов поведения.</p>
+                    <div class="h-butt button">Подробнее о компании</div>
                 </div>
-                <!-- /.ceporator -->
-                 <h1 class="header-title">Комплексное обеспечение товарами и расходными материалами бизнеса</h1>
-                 <p class="header-text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от анализа существующих паттернов поведения.</p>
-                 <div class="h-butt button">Подробнее о компании</div>
-                 <ul class="Uli">
-                    <li class="header-li"><svg class="logo-svg" width="21" height="28">
-                        <use href="img/icons.svg#Vector"></use>
-                    </svg>
-                        <p class="text-li">Непрерывная работа c 2017 года</p>
-                    </li>
-                    <li class="header-li"><svg class="logo-svg" width="29" height="29">
-                        <use href="img/icons.svg#Vector (1)"></use>
-                    </svg>
-                        <p class="text-li">Вся продукция сертифицирована</p>
-                    </li>
-                    <li class="header-li"><svg class="logo-svg" width="25" height="28">
-                        <use href="img/icons.svg#Vector (2)"></use>
-                    </svg>
-                        <p class="text-li">Контроль качества на всех этапах</p>
-                    </li>
-                    <li class="header-li"><svg class="logo-svg" width="35" height="26">
-                        <use href="img/icons.svg#Vector (3)"></use>
-                    </svg>
-                        <p class="text-li">Возможны поставки по всей России</p>
-                    </li>
-                    <li class="header-li"><svg class="logo-svg" width="32" height="25">
-                        <use href="img/icons.svg#Vector (4)"></use>
-                    </svg>
-                        <p class="text-li">Оперативное производство</p>
-                    </li>
-                 </ul>
+                <div class="ULI">
+                    <ul class="Uli">
+                        <li class="header-li"><svg class="logo-svg" width="21" height="28">
+                            <use href="img/icons.svg#Vector"></use>
+                        </svg>
+                            <p class="text-li">Непрерывная работа c 2017 года</p>
+                        </li>
+                        <li class="header-li"><svg class="logo-svg" width="29" height="29">
+                            <use href="img/icons.svg#Vector (1)"></use>
+                        </svg>
+                            <p class="text-li">Вся продукция сертифицирована</p>
+                        </li>
+                        <li class="header-li"><svg class="logo-svg" width="25" height="28">
+                            <use href="img/icons.svg#Vector (2)"></use>
+                        </svg>
+                            <p class="text-li">Контроль качества на всех этапах</p>
+                        </li>
+                        <li class="header-li"><svg class="logo-svg" width="35" height="26">
+                            <use href="img/icons.svg#Vector (3)"></use>
+                        </svg>
+                            <p class="text-li">Возможны поставки по всей России</p>
+                        </li>
+                        <li class="header-li"><svg class="logo-svg" width="32" height="25">
+                            <use href="img/icons.svg#Vector (4)"></use>
+                        </svg>
+                            <p class="text-li">Оперативное производство</p>
+                        </li>
+                     </ul>
+                </div>
+                
             </div>
             <!-- /.header-content -->
 
