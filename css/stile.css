@@ -333,9 +333,17 @@ html{
     margin-bottom: .625rem;
 }
 
+.header{
+    width: 100%;
+}
+
 @media (max-width:1700px){
     html {
         font-size: 14px;
+    }
+
+    .header-image_{
+        width: 100%;
     }
 }
 
@@ -379,6 +387,7 @@ html{
 }
 
 @media (max-width:992px){
+    
     .header{
         min-width: 60rem;
     }
@@ -454,9 +463,11 @@ html{
     .mobile-menu-nav{
         list-style: none;
         padding: 0;
-    }
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+    }   
 
-    .mobile-menu-nav{
+    .mobile-menu-nav-item{
         margin-bottom: 2rem;
     }
 
@@ -469,16 +480,47 @@ html{
     }
 
     .mobile-submenu{
-        list-style: none;
+        text-decoration: none;
+        list-style-type: none;
         padding: 0;
         padding-left: 1rem;
         margin-top: 1rem;
     }
 
-    .mobile-submenu-item{
+    .mobile-submenu-link{
         text-decoration: none;
+        list-style: none;
         font-size: 14px;
         line-height: 160%;
         color: #828A99;
     }
+
+    .mobile-phone{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 160%;
+        text-decoration: underline;
+        color: #292D33;
+        border-top: 1px solid #EBEBF0;
+        padding-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .mobile-info{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .mobile-info-address,
+    .mobile-info-email{
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        color: #292D33;
+    }
+
 }
