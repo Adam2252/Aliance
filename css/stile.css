@@ -20,7 +20,7 @@ html{
     position: relative;
     max-width: 90rem;
     margin-top: auto;
-    margin-left: 13rem;
+    margin-left: 8rem;
 }
 
 .navbar{
@@ -178,8 +178,8 @@ html{
 .h-butt{
     font-size: 1rem;
     color: #fff;
-    line-height: 160%;
-    font-weight: 600;
+    line-height: 180%;
+    font-weight: 700;
     background-color: #5C8EE5;
     padding: 1.5625rem 3.75rem;
     border: none;
