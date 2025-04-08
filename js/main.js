@@ -29,10 +29,42 @@ window.addEventListener('scroll', () => {
 
 mMenuToggle.addEventListener("click", (event) => {
     event.preventDefault();
-    if (menu.classList.contains("is open")){
+    if (menu.classList.contains("is-open")){
         closeMenu();
     } else{
         openMenu();
     }
 })
+
+const swiper = new Swiper('.swiper', {
+    speed: 400,
+    autoHeight: true,
+    slidesPerView: 1,
+    navigation: {
+        nextEl: '.slider-buttons-next, .swiper-button-next',
+        prevEl: '.slider-buttons-prev, .swiper-button-prev',
+      }, 
+      breakpoints: {
+        // when window width is >= 320px
+        // when window width is >= 640px
+        326: {
+            slidesPerView: 1,
+          },
+        576: {
+          slidesPerView: 2,
+        },
+        // when window width is >= 480px
+        768: {
+          slidesPerView: 3,
+        },
+        // when window width is >= 640px
+        1024: {
+          slidesPerView: 4,
+        },
+        // when window width is >= 640px
+        1200: {
+            slidesPerView: 5,
+          },
+      }
+  });   
 
