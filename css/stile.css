@@ -8,13 +8,25 @@ body{
 
 html{
     font-size: 16px;
+} 
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(/fonts/ofont.ru_Bebas\ Neue.ttf);
 }
+
 @font-face { 
     font-family: "BebasBook";
     src: url("../fonts/BebasBook.woff") format("woff");
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
 }
+
+.Swiper{
+    margin-right: 13rem;
+    
+}
+
 .slider-buttons{
     display: none;
     height: 44px;
@@ -54,20 +66,25 @@ html{
     position: relative;
     max-width: 100%;
     margin-top: auto;
-    margin-left: 7rem;
+    margin-left: 13.5rem;
 }
 
 .navbar{
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     border-bottom: 1px solid rgba(235, 235, 240, 0.2);
     display: flex;
     align-items: center;
     color: #fff;
-    height: 5.875rem;
+    height: 5.1875rem;
     width: 100%;
     z-index: 2;
     position: fixed;
     transition: background-color 0.5s;
+}
+
+.logo-svg{
+    padding-top: 0.5rem;
+    justify-content: start;
 }
 
 .header-nav{
@@ -84,9 +101,10 @@ html{
 }
 
 .header-nav-link{
+    font-size: "Noto Sans";
     white-space: nowrap;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-right: 3rem;
     color: inherit;
 }
@@ -106,10 +124,13 @@ html{
 }
 
 .header-button{
+    text-decoration: none;
+    font-size: "Noto Sans";
     flex-shrink: 0;
-    height: 100%;
-    font-size: 1rem;
+    height: 102%;
+    font-size: 16px;
     color: #fff;
+    width: 228px;
     line-height: 160%;
     font-weight: 600;
     background-color: #5C8EE5;
@@ -119,22 +140,31 @@ html{
     cursor: pointer;
 }
 
-.navbar-button
+.button-text{
+    text-decoration: none;
+    font-size: "Noto Sans" bold;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+}
 
 .button{
     font-size: 1rem;
     color: #fff;
-    line-height: 160%;
+    line-height: 50%;
     font-weight: 600;
     background-color: #5C8EE5;
-    padding: 1.5625rem 3.75rem;
+    padding: 1.5625rem 1.75rem;
     border: none;
     display: inline-block;
     cursor: pointer;
 }
 
 .header-logo{   
-    display: flex;
+    padding-left: 1.875rem;
+    padding-right: 3rem;
+    display: inline-block;
+    background-position: center bottom -40px;
     align-items: center;
     height: 100%;
     border-right: 1px solid rgba(235, 235, 240, 0.2);
@@ -157,18 +187,17 @@ html{
 
 .header-image{
     width: 100%;
-    background-position: center bottom -2.5rem;
     background-image:  url('../img/header-jpg.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center bottom -40px;
     position: relative;
 }
 
 .header-image::before{
     content: "";
     position: absolute;
-    background-color: rgba(41, 45, 51, 0.6);
+    background-color: rgba(41, 45, 51, 0.75);
     top: 0;
     left: 0;
     width: 100%;
@@ -177,9 +206,9 @@ html{
 }
 
 .ceporator{
-    margin-top: 7rem;
+    margin-top: 4.5rem;
     background-color: #5C8EE5;
-    width: 10rem;
+    width: 8.8rem;
     height: .125rem;
 }
 
@@ -191,25 +220,26 @@ html{
 }
 
 .header-title{
-    margin-top: 2rem;
-    letter-spacing: .8px;
-    word-spacing: -1.6px;
-    font-family: "BebasBook";
+    font-family: "Bebas Neue";
     font-style: normal;
     font-weight: 400;
-    font-size: 5rem;
+    margin-top: 1.7rem;
+    margin-left: 0.2rem;
+    letter-spacing: 0.6px;
+    word-spacing: -1.1px;
+    font-size: 4.5rem;
     line-height: 120%;
     max-width: 67.5rem;
 }
 
 .header-text{
-    margin-top: .0625rem;
-    font-family: 'Noto Sans';
+    margin-top: -22px;
+    font-family: "Noto Sans";
     font-style: normal;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 13px;
     line-height: 160%;
-    margin-bottom: 3.125rem;
+    margin-bottom: -10px;
     height: 100%;
 }
 
@@ -218,44 +248,48 @@ html{
 }
 
 .h-butt{
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #fff;
-    line-height: 180%;
-    font-weight: 700;
+    line-height: 143%;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
     background-color: #5C8EE5;
-    padding: 1.5625rem 3.75rem;
+    padding: 1.5rem 3.6rem;
     border: none;
+    margin-left: 0.2rem;
     display: inline-block;
     cursor: pointer;
-    margin-top: 3.125rem;
+    margin-top: 3.555rem;
 }
 
 .Uli{
     margin-bottom: 0;
     list-style: none;
     display: flex;
-    min-width: 10rem;
+    width: 10rem;
     padding: 0;
-    margin-top: 6.25rem;
+    margin-top: 5.8rem;
     position: relative;
     color: #fff;
 }
 
 .text-li{
-    margin-top: 1.875rem;
+    margin-top: 1.5rem;
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 160%;
     height: 100%;
 }
 
 .header-li{
+    padding-top: 16px;
     position: relative;
-    padding: 1.75rem 3.125rem;
+    padding: 0.8rem 3rem;
     height: 100%;
-    width: 18rem;
+    width: 14px;
     border: 1px solid rgba(235, 235, 240, 0.2);
     
 }
@@ -275,7 +309,6 @@ html{
     height: 40px;
     display: none;
     justify-content: flex-end;
-
 }
 
 .steps-button-next, .steps-button-prev{
@@ -303,7 +336,7 @@ html{
 .steps-num{
     display: flex;
     align-items: center;
-    font-family: 'BebasBook';
+    font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 400;
     font-size: 3rem;
@@ -433,7 +466,7 @@ html{
         padding: 2rem;
     }
     .logo-svg{
-        max-width: 8rem;
+        width: 2rem;
     }
     .header-nav{
         padding-left: 2rem;
