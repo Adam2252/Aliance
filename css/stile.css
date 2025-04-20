@@ -289,6 +289,11 @@ html{
     display: inline-block;
     cursor: pointer;
     margin-top: 3.555rem;
+    transition: background-color 0.5s;
+}
+
+.h-butt:hover{
+    background-color: #3A71D1;
 }
 
 .Uli{
