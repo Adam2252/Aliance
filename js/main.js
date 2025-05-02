@@ -6,7 +6,7 @@ const menu = document.querySelector(".mobile-menu")
 
 const openMenu = (event) => {
     menu.classList.add("is-open");
-    mMenuToggle.classList.add("clos-menu")
+    mMenuToggle.classList.add("close-menu")
     document.body.style.overflow="hidden";
     navbar.classList.add('navbar-light')
     logo.href.baseVal = "img/icons.svg#logo-li2ght"
@@ -15,7 +15,7 @@ const openMenu = (event) => {
 const closeMenu = (event) => {
     menu.classList.remove("is-open");
     document.body.style.overflow="";
-    mMenuToggle.classList.remove("clos-menu")
+    mMenuToggle.classList.remove("close-menu")
     navbar.classList.remove('navbar-light')
     logo.href.baseVal = "img/icons.svg#logo-light"
 };

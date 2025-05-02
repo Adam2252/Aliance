@@ -21,6 +21,40 @@ html{
     font-style: normal;
     font-weight: 400;
 }
+.founder{
+    min-height: 41.25rem;
+    position: relative; 
+}
+
+.clients{
+    margin-top: 1rem;
+}
+
+.founder-photo{
+    position: absolute;
+    left: 0;
+    width: 40%;
+    top: 0;
+    min-height: 600px;
+    object-fit: cover;
+}
+
+.founder-content{
+    max-width: 720px;
+
+}
+
+.founder-contet-wrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.founder-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;  
+    color: #828a99;
+}
 
 .Marki{
     display: flex;
@@ -61,7 +95,7 @@ html{
     line-height: 160%;
     color: #828a99;
     grid-area: text;
-    margin-top: 0.625rem;
+    margin-top: .625rem;
 }
 
 .AG-title{
@@ -70,6 +104,7 @@ html{
     margin: 0;
     font-size: 1.75rem;
     line-height: 160%;
+    transform: color 0.5s;
     color: #292d33;
     grid-area: title;    
 }
@@ -152,7 +187,7 @@ html{
 }
 
 .header-nav-item{
-    padding-right: 0.5rem;
+    padding-right: .5rem;
     height: 100%;
 }
 
@@ -170,7 +205,7 @@ html{
     align-items: center;
     font-size: "Noto Sans";
     text-decoration: none;
-    font-size: 0.911rem;
+    font-size: .911rem;
     color: inherit;
     position: relative;
 }
@@ -194,13 +229,13 @@ html{
     flex-shrink: 0;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: .5rem;
     margin-right: 3rem;  
 }
 
 .header-phone-link{
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: .9rem;
     color: inherit; 
 }
 
@@ -331,7 +366,7 @@ html{
     background-color: #5C8EE5;
     padding: 1.5rem 3.6rem;
     border: none;
-    margin-left: 0.001rem;
+    margin-left: .001rem;
     display: inline-block;
     cursor: pointer;
     margin-top: 3rem;
@@ -572,13 +607,64 @@ html{
 
 .card-text{
     margin-bottom: 24.625rem;
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 160%;
     color: #828A99;
 }
 
 .card-content{
     padding: 2.5rem 3.125rem;
+}
+
+.clients-list{
+    list-style-type: none;
+    padding: 0;
+    columns: 2 auto;
+}
+.client-wrappa{
+    display: flex;
+    gap: 3.125rem;
+}
+.client-content{
+    flex-basis: 60%;
+}
+
+.clients-logo-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 10;
+}
+
+.clients-logo-item{
+    flex-basis: 33%;
+    border: 1px solid #ebebf0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clients-list-item{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #292d33;
+}
+
+.burger-night{
+    display: block;
+}
+.burger-light{
+    display: none;
+}
+.clients-logo-list :hover .burger-night{
+    display: none;
+} 
+
+.clients-logo-list :hover .burger-light{
+    display: block;
 }
 @media (max-width:1700px){
     html {
@@ -613,6 +699,9 @@ html{
 }
 
 @media (max-width:1200px){
+    .founder-photo{
+        min-width: 35rem;
+    }
     .container{
         min-width: 70rem;
     }
@@ -812,6 +901,11 @@ html{
     .card{
         flex-basis: 100%;
     }
+    .founder-photo{
+        position: relative;
+        width: 100%;
+        margin-bottom: 3.125rem;
+    }
 }
 
 @media (max-width:576px){
@@ -822,7 +916,6 @@ html{
     .header-title{
         font-size: 2rem;
     }
-    
     .header-content{
         padding-top: 2rem;
     }
@@ -830,5 +923,11 @@ html{
         grid-template-areas: 
         "logo title"
         "text text";
+    }
+    .clients-list{
+        columns: 1;
+    }
+    .clients-logo-item{
+        flex-basis: 50%;
     }
 }
