@@ -728,6 +728,126 @@ html{
 .clients-logo-list :hover .burger-light{
     display: block;
 }
+
+.bg-grey{
+    background: #f0f2f5;
+    position: relative;
+    padding-top: 6.25rem;
+    margin-top: 14.0625rem;
+}
+
+.cta{
+    margin-top: 300px;
+}
+
+.cta-image{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 600px;
+    width: 50%;
+}
+
+.cta-form-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 80px;
+}
+
+.cta-form-text{
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #828A99;
+    margin-top: 1.375rem;
+    margin-bottom: 2.5rem;
+    min-width: 40rem;
+}
+
+.cta-form-footer{
+    gap: 1.875rem;
+    display: flex;
+    margin-top: 1.875rem;
+}
+
+.cta-form-button{
+    flex-shrink: 0;
+}
+
+.notify{
+    gap: .625rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.notify-icon{
+    flex-shrink: 0;
+}
+
+.notify-text{
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    margin: 0;
+    color: #828A99;
+}
+
+.input-group-wrapper{
+    display: flex;
+    gap: 1.875rem;
+}
+
+.input-group{
+    position: relative;
+    height: 66px;
+    flex-grow: 1;
+}
+
+.input{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1.25rem 1.875rem;
+    border: 1px solid #e4e4eb;
+    background-color: #F0F2F5;
+}
+
+.input-group-label{
+    position: absolute;
+    cursor: text;
+    top: 1.8rem;
+    left: 1.975rem;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #828a99;
+    transition: top 0.2s, left 0.2s, font-size 0.2s;
+    
+}
+
+.input:focus{
+    border: 1px solid #5C8EE6;
+    outline: 0;
+}
+
+.input:focus ~ .input-group-label,
+.input:not(:placeholder-shown).input:not(:focus)~.input-group-label {
+    top: -0.4rem;
+    left: 1.25rem;
+    font-size: .625rem;
+    background-color: #F0F2F5;
+    padding: 0 10px;
+}
+
+.cta-form{
+    max-width: 840px;
+}
+
 @media (max-width:1700px){
     html {
         font-size: 14px;
