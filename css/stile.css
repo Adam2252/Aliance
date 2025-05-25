@@ -99,7 +99,7 @@ html{
 
 .founder-content{
     max-width: 720px;
-
+    padding-left: 7.5rem;
 }
 
 .founder-contet-wrapper{
@@ -440,6 +440,7 @@ html{
     margin-bottom: 0;
     list-style: none;
     display: flex;
+    height: 100%;
     width: 10rem;
     padding: 0;
     margin-top: 5.8rem;
@@ -803,10 +804,20 @@ html{
     gap: 1.875rem;
 }
 
+.modal-flex{
+    display: block;
+}
+
+.input-group-wertical{
+    display: flex;
+    flex-direction: column;
+}
+
 .input-group{
     position: relative;
     height: 66px;
     flex-grow: 1;
+    background-color: #f0f2f5;
 }
 
 .input{
@@ -817,7 +828,7 @@ html{
     left: 0;
     padding: 1.25rem 1.875rem;
     border: 1px solid #e4e4eb;
-    background-color: #F0F2F5;
+    background-color: inherit;
 }
 
 .input-group-label{
@@ -877,7 +888,7 @@ html{
     top: -0.4rem;
     left: 1.25rem;
     font-size: .625rem;
-    background-color: #F0F2F5;
+    background-color: inherit;
     padding: 0 10px;
 }
 
@@ -979,6 +990,99 @@ html{
     font-size: .75rem;
     line-height: 160%;
     color: inherit;
+}
+
+.modal{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40, 45, 51, 0.5);
+    z-index: 10;
+    display: flex;
+}
+
+.modal-close{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ebebf0;
+}
+
+.modal.is-open{
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal.is-open .modal-dilog{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.modal-dilog{
+    background-color: #fff;
+    margin: auto;
+    max-width: 460px;
+    padding: 2.5rem 3.125rem;
+    position: relative;
+    max-height: 627px;
+    transform: translateY(-10%);
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.2s;
+}
+
+.modal-title{
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 120%;
+    color: #292D33;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.modal-text{
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 160%;
+    color: #828A99;
+    margin-bottom: 1.875rem;
+}
+
+.modal-input-label{
+    background-color: #fff;
+}
+
+.modal-input-group{
+    background-color: #fff;
+}
+
+.modal-input{
+    background-color: #fff;
+}
+
+.modal-form-footer{
+    margin-top: 30px;
+}
+
+.modal-form-button{
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5rem;
 }
 
 @media (max-width:1700px){

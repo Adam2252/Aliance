@@ -92,7 +92,7 @@
                 </svg>
                 <a href="tel:+74996861014" class="header-phone-link">+7 (499) 686-10-14</a>
             </div>
-            <button class="navbar-button button">
+            <button class="navbar-button button" data-toggle="modal">
                 <svg class="button-icon" width="24" height="24">
                     <use href="img/icons.svg#phone"></use>
                 </svg>
@@ -108,7 +108,7 @@
                     <!-- /.ceporator -->
                     <h2 class="header-title">Комплексное обеспечение товарами и расходными материалами бизнеса</h2>
                     <p class="header-text">Высокий уровень вовлечения представителей целевой аудитории является четким <br> доказательством простого факта: высококачественный прототип будущего проекта <br> напрямую зависит от анализа существующих паттернов поведения.</p>
-                    <div class="h-butt button">Подробнее о компании</div>
+                    <div class="h-butt button" data-toggle="modal">Подробнее о компании</div>
                 </div>
             <div class ="Swiper">
                 <!-- Начало слайдера -->
@@ -120,23 +120,28 @@
                             <svg width="20" height="28">
                                 <use href="img/icons.svg#Vector"></use>
                             </svg>
-                            <p class="text-li">Непрерывная работа c 2017 года</p></li>
+                            <p class="text-li">Непрерывная работа c 2017 года</p>
+                        </li>
                          <li class="swiper-slide header-li"><svg width="29" height="29">
                             <use href="img/icons.svg#Vector (1)"></use>
                         </svg>
-                            <p class="text-li">Вся продукция сертифицирована</p></li>
+                            <p class="text-li">Вся продукция сертифицирована</p>
+                        </li>
                          <li class="swiper-slide header-li"><svg width="25" height="28">
                             <use href="img/icons.svg#Vector (2)"></use>
                         </svg>
-                            <p class="text-li">Контроль качества на всех этапах</p></li>
+                            <p class="text-li">Контроль качества на всех этапах</p>
+                        </li>
                          <li class="swiper-slide header-li"><svg width="35" height="26">
                             <use href="img/icons.svg#Vector (3)"></use>
                         </svg>
-                            <p class="text-li">Возможны поставки по всей России</p></li>
+                            <p class="text-li">Возможны поставки по всей России</p>
+                        </li>
                          <li class="swiper-slide header-li"><svg width="32" height="25">
                             <use href="img/icons.svg#Vector (4)"></use>
                         </svg>
-                            <p class="text-li">Оперативное производство</p></li>
+                            <p class="text-li">Оперативное производство</p>
+                        </li>
                     </ul>
                     <!-- Кнопки навигации -->
                     <div class="slider-buttons">
@@ -599,7 +604,7 @@
                 </div>
             </div>
         </div>
-        <hr class="footer-seporator">
+        <hr  class="footer-seporator">
         <div class="container">
             <div class="footer-wrapper">
                 <div class="footer-legal">
@@ -618,6 +623,38 @@
         </div>
         <!-- /.container -->
     </footer>
+    <div class="modal">
+        <div class="modal-dilog">
+            <h2 class="modal-title">Есть вопросы?</h2>
+            <a href="" class="modal-close">
+                <svg class="close-icon"width="24" height="24">
+                    <use href="img/icons.svg#close"></use>
+                </svg>
+            </a>
+            <p class="modal-text">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
+            <form action="#" class="modal-form">
+                <div class="input-group-wrapper input-group-wertical">
+                        <div class="input-group modal-input-group">
+                            <input id="modal-user-name" type="text" class="input modal-input" placeholder=" "/>
+                            <label  class="input-group-label modal-input-label" for="modal-user-name">Имя</label>
+                        </div>
+                        <div class="input-group modal-input-group">
+                            <input id="modal-user-phone" type="tel" class="input modal-input" placeholder=" "/>
+                            <label class="input-group-label modal-input-label" for="modal-user-phone">Номер телефона</label>
+                        </div>
+                    </div>
+                    <div class="cta-form-footer modal-flex">
+                        <button type="submit" class="button modal-form-button">Отправить заявку</button>
+                        <div class="notify">
+                            <svg  width="14" height="14" class="notify-icon">
+                                <use href="img/icons.svg#shield"></use>
+                            </svg>
+                            <p class="notify-text">Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную конфиденциальность информации!</p>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </div>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
