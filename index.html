@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/stile.css">
     <title>Aliance</title>
 </head>
-<body>
+<body class="front-page">
 <header class="header header-image">
         <div class="mobile-menu">
             <ul class="mobile-menu-nav">
@@ -61,17 +61,17 @@
             </a>
             <div class="header-logo">
                 <a href="./" class="logo-svg logo-link">
-                    <svg class="logo-logo-light" width="110" height="44">
+                    <svg class="logo-svg logo-light" width="110" height="44">
                         <use href="img/icons.svg#logo-light"></use>
                     </svg>
-                    <svg class="logo-svg logo" width="110" height="44">
+                    <svg class="logo-svg logo-dark" width="110" height="44">
                         <use href="img/icons.svg#logo"></use>
                     </svg>
                 </a>
             </div>
             <ul class="header-nav">
                 <li class="header-nav-item">
-                    <a href="#" class="header-nav-link">О компании</a>
+                    <a href="/about.html" class="header-nav-link">О компании</a>
                 </li>
                 <li class="header-nav-item">
                     <a href="#" class="header-nav-link">Контрактное производство</a>
@@ -488,8 +488,7 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="cta">
+        <section class="cta">
         <div class="bg-grey">
             <img src="img/Frame 48.png" alt="CTA" class="cta-image">
             <div class="cta-form-wrapper container">
@@ -504,7 +503,7 @@
                             <label  class="input-group-label" for="user-name">Имя</label>
                         </div>
                         <div class="input-group">
-                            <input id="user-phone" type="tel" class="input" placeholder=" "/>
+                            <input id="user-phone" type="tel" class="input phone-mask" placeholder=" "/>
                             <label class="input-group-label" for="user-phone">Номер телефона</label>
                         </div>
                     </div>
@@ -626,7 +625,7 @@
     <div class="modal">
         <div class="modal-dilog">
             <h2 class="modal-title">Есть вопросы?</h2>
-            <a href="" class="modal-close">
+            <a href="#" class="modal-close">
                 <svg class="close-icon"width="24" height="24">
                     <use href="img/icons.svg#close"></use>
                 </svg>
@@ -639,7 +638,7 @@
                             <label  class="input-group-label modal-input-label" for="modal-user-name">Имя</label>
                         </div>
                         <div class="input-group modal-input-group">
-                            <input id="modal-user-phone" type="tel" class="input modal-input" placeholder=" "/>
+                            <input id="modal-user-phone" type="tel" class="input phone-mask modal-input" placeholder=" "/>
                             <label class="input-group-label modal-input-label" for="modal-user-phone">Номер телефона</label>
                         </div>
                     </div>
@@ -655,6 +654,8 @@
             </form>
         </div>
     </div>
+    </section>
+    
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>

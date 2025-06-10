@@ -167,10 +167,6 @@ html{
     grid-area: title;    
 }
 
-.Swiper{
-    margin-right: 13rem;
-}
-
 .slider-buttons{
     display: none;
     height: 44px;
@@ -411,7 +407,7 @@ html{
     margin-bottom: -0.3rem;
 }
 
-.logo{
+.logo-dark{
     display: none;
 }
 
@@ -440,8 +436,8 @@ html{
     margin-bottom: 0;
     list-style: none;
     display: flex;
-    height: 100%;
-    width: 10rem;
+    height: 10.5rem;
+    width: 18rem;
     padding: 0;
     margin-top: 5.8rem;
     position: relative;
@@ -462,8 +458,8 @@ html{
     padding-top: 1rem;
     position: relative;
     padding: 1.4rem 2.5rem;
-    height: 100%;
-    width: 10px;
+    height: 168px;
+    width: 288px;
     border: 1px solid rgba(235, 235, 240, 0.2);
     
 }
@@ -593,9 +589,16 @@ html{
 }
 
 .navbar-light{
-    width: 100%;
     background-color: #fff;
     color: #292d33;
+}
+
+.navbar-light .logo-light{
+    display: none;
+}
+
+.navbar-light .logo-dark{
+    display: block;
 }
 
 .navbar-light .header-logo-path{
@@ -711,6 +714,7 @@ html{
     display: flex;
     align-items: center;
     gap: 1.25rem;
+    padding-bottom: 20px;
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
